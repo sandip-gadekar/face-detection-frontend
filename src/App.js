@@ -70,7 +70,7 @@ class App extends Component {
     app.models.predict("a403429f2ddf4b49b307e318f00e528b", this.state.inputvalue
     ).then(response => {
       if(response){
-        fetch('http://localhost:3002/image',{
+        fetch('https://pure-plateau-81160.herokuapp.com/image',{
           method:'put',
           headers:{'content-type':'application/json'},
           body:JSON.stringify({
